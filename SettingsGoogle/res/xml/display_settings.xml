@@ -42,11 +42,6 @@
             android:summary="@string/summary_placeholder"
             android:title="@string/screen_timeout"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController" />
-	    
-	    <com.android.settings.custom.preference.SecureSettingSwitchPreference
-            android:key="adaptive_sleep"
-            android:title="@string/adaptive_sleep_title"
-            android:summary="@string/adaptive_sleep_summary"/>
 
     </PreferenceCategory>
 
@@ -198,14 +193,10 @@
             android:defaultValue="false"
             settings:controller="com.android.settings.custom.touch.HighTouchSensitivitySettingsPreferenceController" />
 
-	
-            
-	    
-	    <com.android.settings.custom.preference.GlobalSettingSwitchPreference
-            android:key="wake_when_plugged_or_unplugged"
-            android:title="@string/wake_when_plugged_or_unplugged_title"
-            android:summary="@string/wake_when_plugged_or_unplugged_summary"
-            android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
+	<SwitchPreference
+            android:key="pocket_judge"
+            android:title="@string/proximity_wake_title"
+            android:summary="@string/proximity_wake_summary" />
 
         <ListPreference
             android:key="theme"
